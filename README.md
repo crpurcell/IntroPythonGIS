@@ -20,6 +20,8 @@ distribution and create a Python 3.5 environment called ```gis``` and install mo
 
 ### Download and install Anaconda:
 
+From the command line do the following:
+
 ```
 wget https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh
 bash Anaconda3-4.1.1-Linux-x86_64.sh
@@ -35,14 +37,14 @@ need for different tasks). If you want to do this edit your
 alias aconGIS="export PYTHONPATH=/opt/share/anaconda3_GIS; export PATH=/opt/share/anaconda3_GIS/bin:/opt/share/anaconda3_GIS/lib/python3.5/site-packages:$PATH;"
 ```
 
-If this is going to be your default Python, you can just add the paths
-without the ```alias aconGIS=""```. Restart your terminal window,
-execute ```aconGIS``` if necessary and check you are pointing to the
-correct Python install using ```which python```.
+If this is going to be your default Python, you can just add the line
+without the surrounding ```alias aconGIS=" ... "```. Restart your
+terminal window, execute ```aconGIS``` (if necessary) and check you are
+pointing to the correct Python install using ```which python```.
 
 ### Install GIS Modules
 
-Download this repository by clicking on "Clone or Download" or executing
+Download this repository by clicking on "Clone or Download" above, or executing the following on the command line:
 
 ```
 git clone https://github.com/crpurcell/IntroPythonGIS.git
@@ -57,8 +59,8 @@ cd IntroPythonGIS
 conda env create -f gis.yml
 ```
 
-We need to install PyCRS using the standard ```pip``` commnad. This is
-a fixed version from mullenkamp.
+We need to install PyCRS using the standard ```pip``` command. This is
+a fixed version from GitHub user ```mullenkamp```.
 
 ```
 pip install https://github.com/mullenkamp/PyCRS/archive/master.zip
@@ -66,14 +68,20 @@ pip install https://github.com/mullenkamp/PyCRS/archive/master.zip
 
 Lastly, the QGIS software is very useful to check that your Python
 scripts are doing the right thing. Install this from the Ubuntu
-repositories using ```sudo apt-get install gqis```.
+repositories using the command ```sudo apt-get install gqis``` (admin
+privileges needed).
 
 
 ## Running the Python Jupyter Notebooks
 
-Before running the notebooks, download the example datasets and move
+* Before running the notebooks, download the example datasets and move
 the data into a sub-directory ```IntroPythonGIS/Data```. Data are
-available from [here](https://github.com/Automating-GIS-processes/Lesson-2-Geo-DataFrames/raw/master/data/Data.zip), [here](https://automating-gis-processes.github.io/CSC18/_static/data/L2/Europe_borders.zip), [here](https://automating-gis-processes.github.io/CSC18/_static/data/L3/addresses.txt) and [here](https://github.com/Automating-GIS-processes/Lesson-4-Classification-overlay/raw/master/data/data.zip).
+available from
+[here](https://github.com/Automating-GIS-processes/Lesson-2-Geo-DataFrames/raw/master/data/Data.zip),
+[here](https://automating-gis-processes.github.io/CSC18/_static/data/L2/Europe_borders.zip),
+[here](https://automating-gis-processes.github.io/CSC18/_static/data/L3/addresses.txt)
+and
+[here](https://github.com/Automating-GIS-processes/Lesson-4-Classification-overlay/raw/master/data/data.zip). *
 
 To run the Jupyter Notebooks, do the following on the command line:
 ```
@@ -81,3 +89,5 @@ aconGIS              # (if you made an alias in your .bash_aliases file)
 source activate gis  # to activate the python environment
 jupyter-notebook     # to start the Jupyter notebook server.
 ```
+
+Go to your browser and have fun doing GIS analysis in Python!
