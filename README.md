@@ -1,11 +1,12 @@
 # Introduction to Graphical Information Systems Using Python
 
-This repository contains worked examples in [Jupyter notebooks]
-(http://jupyter.org/) for the 3-day online course [Introduction to
-Python GIS](https://automating-gis-processes.github.io/CSC18/) by CSC
+This repository contains worked examples in [Jupyter
+notebooks](http://jupyter.org/) for the 3-day online course
+[Introduction to Python
+GIS](https://automating-gis-processes.github.io/CSC18/) by CSC
 Finland. The materials are originally drawn from the [Automating GIS
 Processes](https://automating-gis-processes.github.io/2017/) masters
-course at the University of Helsinki. 
+course at the University of Helsinki.
 
 ## Installing GIS Python Modules on Ubuntu Linux
 
@@ -19,8 +20,10 @@ distribution and create a Python 3.5 environment called ```gis``` and install mo
 
 ### Download and install Anaconda:
 
-```wget https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh
-bash Anaconda3-4.1.1-Linux-x86_64.sh```
+```
+wget https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh
+bash Anaconda3-4.1.1-Linux-x86_64.sh
+```
 
 My preference is to install the distribution in a shared directory
 ```/opt/share/anaconda3_GIS``` and use a command-line alias to make it
@@ -28,7 +31,9 @@ visible to the system (I have multiple Python installations that I
 need for different tasks). If you want to do this edit your
 ```$HOME/.bash_aliases``` file to contain:
 
-```alias aconGIS="export PYTHONPATH=/opt/share/anaconda3_GIS; export PATH=/opt/share/anaconda3_GIS/bin:/opt/share/anaconda3_GIS/lib/python3.5/site-packages:$PATH;"```
+```
+alias aconGIS="export PYTHONPATH=/opt/share/anaconda3_GIS; export PATH=/opt/share/anaconda3_GIS/bin:/opt/share/anaconda3_GIS/lib/python3.5/site-packages:$PATH;"
+```
 
 If this is going to be your default Python, you can just add the paths
 without the ```alias aconGIS=""```. Restart your terminal window,
@@ -48,7 +53,7 @@ Python modules using a yml file (which specifies the environment name,
 modules and version numbers):
 
 ```
-cd 
+cd IntroPythonGIS
 conda env create -f gis.yml
 ```
 
@@ -76,4 +81,3 @@ aconGIS              # (if you made an alias in your .bash_aliases file)
 source activate gis  # to activate the python environment
 jupyter-notebook     # to start the Jupyter notebook server.
 ```
-
