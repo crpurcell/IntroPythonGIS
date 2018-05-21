@@ -74,14 +74,14 @@ privileges needed).
 
 ## Running the Python Jupyter Notebooks
 
-* Before running the notebooks, download the example datasets and move
+**Before running the notebooks, download the example datasets and move
 the data into a sub-directory ```IntroPythonGIS/Data```. Data are
 available from
 [here](https://github.com/Automating-GIS-processes/Lesson-2-Geo-DataFrames/raw/master/data/Data.zip),
 [here](https://automating-gis-processes.github.io/CSC18/_static/data/L2/Europe_borders.zip),
 [here](https://automating-gis-processes.github.io/CSC18/_static/data/L3/addresses.txt)
 and
-[here](https://github.com/Automating-GIS-processes/Lesson-4-Classification-overlay/raw/master/data/data.zip). *
+[here](https://github.com/Automating-GIS-processes/Lesson-4-Classification-overlay/raw/master/data/data.zip).**
 
 To run the Jupyter Notebooks, do the following on the command line:
 ```
