@@ -50,7 +50,7 @@ Download this repository by clicking on "Clone or Download" above, or executing 
 git clone https://github.com/crpurcell/IntroPythonGIS.git
 ```
 
-We are going to create a new "conda" environment and install most
+We are going to create a new conda environment and install most
 Python modules using a yml file (which specifies the environment name,
 modules and version numbers):
 
@@ -68,7 +68,7 @@ pip install https://github.com/mullenkamp/PyCRS/archive/master.zip
 
 Lastly, the QGIS software is very useful to check that your Python
 scripts are doing the right thing. Install this from the Ubuntu
-repositories using the command ```sudo apt-get install gqis``` (admin
+repositories using the command ```sudo apt-get install qgis``` (admin
 privileges needed).
 
 
