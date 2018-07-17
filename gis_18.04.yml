@@ -1,0 +1,20 @@
+name: gis
+dependencies:
+  - python=3.6
+  - numpy
+  - scipy
+  - matplotlib
+  - ipython
+  - jupyter
+  - sphinx
+  - Pillow
+  - geopandas
+  - netCDF4
+  - pyproj
+  - cartopy
+  - bokeh
+  
+# conda install -c conda-forge rasterstats
+# conda install -c conda-forge osmnx
+# pip install geopy
+# pip install https://github.com/mullenkamp/PyCRS/archive/master.zip
