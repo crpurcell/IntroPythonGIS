@@ -12,11 +12,13 @@ course at the University of Helsinki.
 
 Performing GIS tasks in Python relies on a suite of python modules
 that can sometimes have complex dependencies. The easiest way to get a
-working installation is to build python environment that contains
-specific module versions drawn from the same packaging source. This
-has the advantage that you can load the environment as needed, so it
-won't break existing installations.  Here I use the Anaconda Python
-distribution and create a Python 3.6 environment called ```gis``` and install modules from the [conda-forge](https://conda-forge.org/) organisation.
+working installation is to build a python environment that contains
+specific module versions drawn from (mostly) the same packaging
+source. This has the advantage that you can load the environment as
+needed, so it won't break existing installations.  Here I use the
+Anaconda Python distribution and create a Python 3.6 environment
+called ```gis``` and install  default modules and modules from the
+[conda-forge](https://conda-forge.org/) organisation.
 
 ### Download and install Anaconda:
 
