@@ -13,8 +13,10 @@ dependencies:
   - pyproj
   - cartopy
   - bokeh
+  - cython
   
 # conda install -c conda-forge rasterstats
 # conda install -c conda-forge osmnx
+# pip install cython
 # pip install geopy
 # pip install https://github.com/mullenkamp/PyCRS/archive/master.zip
