@@ -8,7 +8,7 @@ Finland. The materials are originally drawn from the [Automating GIS
 Processes](https://automating-gis-processes.github.io/2017/) masters
 course at the University of Helsinki.
 
-## Installing GIS Python Modules on Ubuntu Linux
+## Installing GIS Python Modules on Ubuntu Linux 18.04
 
 Performing GIS tasks in Python relies on a suite of python modules
 that can sometimes have complex dependencies. The easiest way to get a
@@ -16,15 +16,15 @@ working installation is to build python environment that contains
 specific module versions drawn from the same packaging source. This
 has the advantage that you can load the environment as needed, so it
 won't break existing installations.  Here I use the Anaconda Python
-distribution and create a Python 3.5 environment called ```gis``` and install modules from the [conda-forge](https://conda-forge.org/) organisation.
+distribution and create a Python 3.6 environment called ```gis``` and install modules from the [conda-forge](https://conda-forge.org/) organisation.
 
 ### Download and install Anaconda:
 
 From the command line do the following:
 
 ```
-wget https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh
-bash Anaconda3-4.1.1-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+bash Anaconda3-5.2.0-Linux-x86_64.sh
 ```
 
 My preference is to install the distribution in a shared directory
@@ -44,7 +44,8 @@ pointing to the correct Python install using ```which python```.
 
 ### Install GIS Modules
 
-Download this repository by clicking on "Clone or Download" above, or executing the following on the command line:
+Download this repository by clicking on "Clone or Download" above, or
+executing the following on the command line:
 
 ```
 git clone https://github.com/crpurcell/IntroPythonGIS.git
@@ -56,19 +57,24 @@ modules and version numbers):
 
 ```
 cd IntroPythonGIS
-conda env create -f gis.yml
+conda env create -f gis_18.04.yml
 ```
 
-We need to install PyCRS using the standard ```pip``` command. This is
-a fixed version from GitHub user ```mullenkamp```.
+Activate the environment using the command ```source activate
+gis```. Several packages need to be installed from the
+```conda-forge``` repositories or via the ```pip``` command.
 
 ```
+conda install -y -c conda-forge rasterstats
+conda install -y -c conda-forge osmnx
+pip install cython
+pip install geopy
 pip install https://github.com/mullenkamp/PyCRS/archive/master.zip
 ```
 
 Lastly, the QGIS software is very useful to check that your Python
 scripts are doing the right thing. Install this from the Ubuntu
-repositories using the command ```sudo apt-get install qgis``` (admin
+repositories using the command ```sudo apt install -y qgis``` (admin
 privileges needed).
 
 
